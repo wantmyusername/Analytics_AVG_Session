@@ -94,16 +94,10 @@ do {
 				$url = 'https://www.google-analytics.com/collect?v=1&_v=j47&aip=0&a='.$a.'&t=pageview&_s=1&dl='.$dluno.'&ul=es&de=windows-1252&dt='.$titulopagina.'&sd=24-bit&sr='.$screenresolution[array_rand($screenresolution)].'&vp='.$viewport[array_rand($viewport)].'&je=0&fl=24.0%20r0&_u=QACAAEABI~&jid=&cid='.$randomusers.'.'.$randomusers.'&tid='.$CodigoAnalytics.'&ul='.$tagidioma.'&z='.$z.'&cm=organic&cs='.$searchengine.'&ck='.$palabraclave.'&cc=content&geoid='.$UbicacionGeografica.'&ua='.$devicecategory[array_rand($devicecategory)];
 
 				echo $url;
-            for($i=0; $i<15; $i++) {
-		        $ch = curl_init();
-		        curl_setopt($ch, CURLOPT_URL, $url);
-		        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-		        curl_setopt($ch, CURLOPT_TIMEOUT, 15);
-		 
-		        $contenido = curl_exec($ch);
-		        curl_close($ch);
-		        sleep(1);
-			}
+                    for($i=0; $i<15; $i++) {
+        		    $consulta =  file_get_contents($url);
+        		        sleep(1);
+        			}
 			}
 
 
