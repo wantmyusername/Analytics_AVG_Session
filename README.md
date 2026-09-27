@@ -1,3 +1,7 @@
+> **Consolidated → archived.** This repo was merged into the single archive
+> [**universal-analytics-fake-traffic-suite**](https://github.com/wantmyusername/universal-analytics-fake-traffic-suite).
+> It is archived and kept only for reference.
+
 # Analytics AVG Session — *Deprecated*
 
 > **Deprecated / historical code.** This repository is ~7 years old and targets **Universal Analytics**, which was shut down on **July 1, 2023**. The script no longer works and is kept for historical and reference purposes only. It is not maintained and should not be used.
